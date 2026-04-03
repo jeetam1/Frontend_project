@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kartik | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #161b22;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .header p {
+      color: #9ca3af;
+      font-size: 1.2rem;
+    }
+
+    /* PROFILE IMAGE */
+    .profile-container {
+      text-align: center;
+      margin-top: -80px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #0d1117;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    /* CARDS */
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      color: white;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    /* SKILL CARD */
+    .skill-card {
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* FORM */
+    .form-control {
+      background: #161b22;
+      border: 1px solid #30363d;
+      color: white;
+    }
+
+    .form-control::placeholder {
+      color: #9ca3af;
+    }
+
+    /* BUTTON */
+    .btn-dark {
+      background: #238636;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background: #2ea043;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #161b22;
+      text-align: center;
+      padding: 15px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Team Portfolio</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="jeetam.html">Jeetam</a></li>
+        <li class="nav-item"><a class="nav-link" href="mohit.html">Mohit</a></li>
+        <li class="nav-item"><a class="nav-link" href="mrithunjay.html">Mrithunjay</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Kartik</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <h1>Kartik</h1>
+  <p>Web Developer | Tech Enthusiast</p>
+</section>
+
+<!-- PROFILE -->
+<div class="profile-container">
+  <img src="images/kartik.jpg" class="profile-img">
+</div>
+
+<!-- ABOUT -->
+<section class="section container">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I am a technology enthusiast with a strong interest in web development and modern design.
+    I enjoy learning new tools and building responsive websites while continuously improving my skills.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section container">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="card skill-card">HTML</div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card skill-card">CSS</div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card skill-card">JavaScript</div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card skill-card">Bootstrap</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section container">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h5>Portfolio Website</h5>
+        <p>Built a responsive personal portfolio using Bootstrap.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h5>Landing Page</h5>
+        <p>Designed modern landing pages for product showcase.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h5>Blog Website</h5>
+        <p>Developed a responsive blog layout using Bootstrap.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section container">
+  <h2 class="section-title">Contact</h2>
+
+  <form>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Your Name">
+      </div>
+      <div class="col-md-6 mb-3">
+        <input type="email" class="form-control" placeholder="Your Email">
+      </div>
+    </div>
+
+    <textarea class="form-control mb-3" placeholder="Message"></textarea>
+
+    <button class="btn btn-dark">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2026 Kartik Portfolio</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
